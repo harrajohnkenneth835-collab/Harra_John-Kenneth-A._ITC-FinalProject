@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+    content="width=device-width, initial-scale=1.0">
+
+    <title>My Personal Life Portfolio</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #f5f5f5;
+            color: #111;
+        }
+
+        header {
+            background: #000;
+            color: white;
+            padding: 20px 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        header h2 {
+            letter-spacing: 2px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 18px;
+            font-size: 14px;
+        }
+
+        nav a:hover {
+            color: gray;
+        }
+
+        section {
+            padding: 80px 10%;
+        }
+
+        .home {
+            min-height: 90vh;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background: white;
+            gap: 30px;
+        }
+
+        .home h1 {
+            font-size: 55px;
+            margin-bottom: 15px;
+        }
+
+        .home span {
+            color: #777;
+        }
+
+        .home p {
+            font-size: 18px;
+            line-height: 1.7;
+        }
+
+        .home img {
+            width: 280px;
+            height: 350px;
+            object-fit: cover;
+            border: 5px solid black;
+        }
+
+        .btn {
+            display: inline-block;
+            background: black;
+            color: white;
+            padding: 13px 25px;
+            margin-top: 20px;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        .title {
+            font-size: 35px;
+            text-align: center;
+            margin-bottom: 35px;
+        }
+
+        .about {
+            text-align: center;
+            background: #e9e9e9;
+        }
+
+        .about p {
+            max-width: 750px;
+            margin: auto;
+            line-height: 2;
+            font-size: 17px;
+        }
+
+        .goals {
+            background: white;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns:
+            repeat(auto-fit, minmax(220px, 1fr));
+            gap: 20px;
+        }
+
+        .card {
+            background: #ededed;
+            padding: 30px;
+            border-radius: 10px;
+            text-align: center;
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            background: #222;
+            color: white;
+            transform: translateY(-5px);
+        }
+
+        .card h3 {
+            margin-bottom: 15px;
+        }
+
+        .education {
+            background: #e9e9e9;
+        }
+
+        .travel {
+            background: white;
+        }
+
+        .contact {
+            background: black;
+            color: white;
+            text-align: center;
+        }
+
+        .contact p {
+            margin: 15px;
+        }
+
+        footer {
+            background: #111;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        @media(max-width: 768px) {
+            header {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            nav a {
+                margin: 5px;
+                font-size: 12px;
+            }
+
+            .home {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .home h1 {
+                font-size: 38px;
+            }
+
+            .home img {
+                width: 230px;
+                height: 280px;
+            }
+
+            section {
+                padding: 60px 7%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h2>MY PORTFOLIO.</h2>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#goals">Goals</a>
+        <a href="#skills">Skills</a>
+        <a href="#education">Education</a>
+        <a href="#travel">Travel</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<!-- HOME -->
+
+<section class="home" id="home">
+
+    <div>
+        <h1>Hello, I'm <span>[JOHN KENNETH HARRA]</span></h1>
+
+        <p>
+            Welcome to my personal life portfolio!
+            This website tells my story, my dreams,
+            my skills, and the person I want to become.
+        </p>
+
+        <a href="#about" class="btn">Discover My Life</a>
+    </div>
+
+    <img src="ken.jpg.jpg" alt="My Personal Photo">
+
+</section>
+
+
+<!-- ABOUT ME -->
+
+<section class="about" id="about">
+
+    <h2 class="title">ABOUT MY LIFE</h2>
+
+    <p>
+        I am [JOHN KENNETH HARRA], a person with dreams,
+        ambitions, and goals in life. I believe that
+        every experience teaches us something valuable.
+        Life is not always easy, but I continue to work
+        hard and stay focused on my dreams.
+
+        My greatest inspiration is my parents.
+        One of my biggest dreams is to give them a
+        peaceful and comfortable life and repay
+        everything they have sacrificed for me.                      
+        
+        I am hard working and dedicated student
+        who is always willig to learn and improve 
+        I have skills in multitasking, organization skills, 
+        willingness to learn, leadership, and critical thinking. 
+        I can adapt to new challenges,work well with others. 
+        manage my responsibilities, and stay focused on achieving my goals.
+        I am also determined to develop my abilities and gain new experiencess
+        that will help me grow personally and professionally.
+    </p>
+
+</section>   
+
+
+<!-- MY GOALS -->
+
+<section class="goals" id="goals">
+
+    <h2 class="title">MY GOALS & DREAMS</h2>
+
+    <div class="container">
+
+        <div class="card">
+            <h3>🎓 Education</h3>
+            <p>
+                Finish my studies and graduate
+                to build a successful future.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>👨‍👩‍👦 My Parents</h3>
+            <p>
+                Give my parents a peaceful life
+                and repay all their sacrifices.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>✈️ Travel the World</h3>
+            <p>
+                Explore different countries,
+                cultures, and beautiful places.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>💼 Success</h3>
+            <p>
+                Have a stable career, achieve
+                financial freedom, and live comfortably.
+            </p>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- MY SKILLS -->
+
+<section class="education" id="skills">
+
+    <h2 class="title">MY SKILLS & TALENTS</h2>
+
+    <div class="container">
+
+        <div class="card">
+            <h3>🎨 Drawing</h3>
+            <p>I enjoy drawing and expressing
+            my creativity through art.</p>
+        </div>
+
+        <div class="card">
+            <h3>💻 Computer Skills</h3>
+            <p>Basic computer knowledge
+            and learning coding.</p>
+        </div>
+
+        <div class="card">
+            <h3>🤝 Communication</h3>
+            <p>Working and communicating
+            with other people.</p>
+        </div>
+
+        <div class="card">
+            <h3>✨ Fashion Styling</h3>
+            <p>I enjoy choosing outfits 
+            and matching different styles..</p>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- EDUCATION -->
+
+<section class="education" id="education">
+
+    <h2 class="title">MY EDUCATION</h2>
+
+    <div class="container">
+
+        <div class="card">
+            <h3>Elementary</h3>
+            <p>School: [Paltok Elementary School]</p>
+            <p>Year: [2018-2019]</p>
+        </div>
+
+        <div class="card">
+            <h3>Junior High School</h3>
+            <p>School: [Dalandanan National High School]</p>
+            <p>Year: [2022-2023]</p>
+        </div>
+
+        <div class="card">
+            <h3>Senior High School</h3>
+            <p>School: [Children Of Mary Immaculate ]</p>
+            <p>Strand: [Stem]</p>
+        </div>
+
+        <div class="card">
+            <h3>College</h3>
+            <p>School: [Global Reciprocal Colleges]</p>
+            <p>Course: [Bachelor Of Science Information Technology]</p>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- TRAVEL -->
+
+<section class="travel" id="travel">
+
+    <h2 class="title">MY DREAM TRAVELS</h2>
+
+    <div class="container">
+
+        <div class="card">
+            <h3>Japan</h3>
+            <p> want to visit Japan because I love its beautiful culture, 
+             fashion, and unique places. I also want to explore Tokyo, 
+            try Japanese food, and take aesthetic pictures. I am interested 
+            in seeing the beautiful streets, visiting famous attractions, and experiencing the Japanese lifestyle.
+            I hope to enjoy every moment and bring home unforgettable memories..</p>
+        </div>
+
+        <div class="card">
+            <h3>New york</h3>
+            <p>I want to visit New York because I love fashion, stylish outfits, and taking aesthetic pictures.
+             I dream of walking through the famous streets of Manhattan, visiting Times Square, and seeing the
+            beautiful city skyline. I also want to explore different fashion styles, visit famous places,
+            and experience the busy lifestyle of New York. I believe this trip would give me inspiration,
+            new experiences, and unforgettable memories. Visiting New York is one of my biggest travel dreams, 
+            and I hope someday I can make it happen...</p>
+        </div>
+
+        <div class="card">
+            <h3> Switzerland</h3>
+            <p>I want to visit Switzerland because I love nature, 
+            mountains, and peaceful scenery. I want to experience
+            he beautiful views, enjoy the fresh air, and capture amazing pictures.
+            I would love to see the snowy mountains, beautiful lakes, and green landscapes.
+            I think Switzerland is the perfect place to relax, 
+            appreciate nature, and create wonderful memories..</p>
+        </div>
+
+        <div class="card">
+            <h3>Paris</h3>
+            <p>I want to visit Paris because I love its romantic atmosphere,
+            stylish fashion, and beautiful architecture. I dream of seeing the Eiffel Tower
+            and taking memorable pictures. I also want to walk around the city, explore its famous places,
+            and experience its fashion culture. Visiting Paris would be a dream come true and a special experience in my life..</p>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- CONTACT -->
+
+<section class="contact" id="contact">
+
+    <h2 class="title">CONTACT ME</h2>
+
+    <p>📞 Contact Number: [09758909441]</p>
+
+    <p>📧 Email: [harrajohnkenneth835@gmail.com]</p>
+
+    <p>📘 Facebook: [Ken harra]</p>
+
+    <p>📍 Location: [Valenzuela]</p>
+
+    <a href="#home" class="btn">Back to Top</a>
+
+</section>
+
+
+<footer>
+    <p>© 2026 My Personal Life Portfolio</p>
+    <p>Dream Big. Work Hard. Never Give Up.</p>
+</footer>
+
+</body>
+</html>
